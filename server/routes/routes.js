@@ -1,15 +1,16 @@
 'use strict';
 
 const joi = require('joi'),
-	// handlers = require('../handlers'),
+	userHandler = require('../handlers/user-handler'),
 	auth = require('../modules/auth');
+	
 
 const routes = (server) => [{
 	method: 'GET',
-	path: '/api/v1/',
-    handler: function(){console.log("foobar")},
+	path: '/api/v1/user/create',
+    handler: userHandler.newUser,
 	config: {
-		description: 'the route route',
+		description: 'Create new user to access the system',
 		tags: ['api', 'v1'],
 		
 	}
