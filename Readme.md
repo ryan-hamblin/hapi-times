@@ -1,6 +1,6 @@
-# hapi-swagger-training
+# hapi-times
 
-_Swagger - a way to find Hapi-Nes and Joi_
+Hapi swagger catapult
 
 ## What is this project?
 
